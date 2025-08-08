@@ -1,0 +1,43 @@
+slug: infoblox-threat-defense-automated
+id: qy6yppfre8ou
+revision: -62135596800
+title: Infoblox - Security and Threat Defense Automated
+teaser: Infoblox UDDI SaaS with DNS Threat Intelligence and Visibility
+description: "\U0001F510 Infoblox Threat Defense Lab: DNS Security & Application Visibility
+  in Multicloud\n\nThis hands-on lab simulates a modern DNS-layer security architecture
+  using Infoblox NIOS X-as-a-Service across a hybrid multicloud setup (AWS + Azure).\n\n\U0001F680
+  What You’ll Do:\n- Deploy a client VPC in AWS and connect it securely to a centralized
+  DNS hub via IPsec tunnels\n- Leverage NIOS-X-as-a-Service as:\n- A recursive and
+  policy-enforcing DNS firewall\n- The authoritative DNS for Azure Private Zones (e.g.,
+  infolab.com)\n- Explore Application Discovery to detect and manage unsanctioned
+  SaaS use — no endpoint agents required\n\n\t✅ Key Capabilities Demonstrated:\n-
+  \tDNS Forwarding + Resolution from AWS to centralized Infoblox PoP\n- \tThreat Protection
+  with Infoblox Threat Intelligence + Custom Lists\n- \tApplication Control — block
+  or allow based on app category or approval status\n- \tAuthoritative DNS Integration
+  with synced Azure Private Zones\n- \tReal-Time Logging & Security Analytics in the
+  Infoblox Portal\n- \tSimulated Exfiltration & DGA Traffic to test policy enforcement\n-
+  \tUnapproved App Blocking via custom rules and Application Discovery insights\n\n\n\n\n\n\U0001F4A1
+  This lab shows how Infoblox delivers DNS-layer defense, SaaS control, and unified
+  visibility — all from a single cloud-native platform, with zero endpoint dependency.\n\n\U0001F6E1️
+  Secure DNS. Stop threats. Control app usage.\nWelcome to Infoblox Threat Defense
+  in action.\n"
+icon: https://play.instruqt.com/assets/tracks/ywozzymyekgv/c31663d57dce11f7baad50af3f7dec77/assets/Infoblox-logo-for-email.png
+tags: []
+owner: infoblox
+developers:
+- iracic@infoblox.com
+instructors: []
+show_timer: true
+idle_timeout: 0
+timelimit: 14400
+lab_config:
+  extend_ttl: 0
+  sidebar_enabled: true
+  hideStopButton: false
+  feedback_recap_enabled: true
+  feedback_tab_enabled: false
+  theme:
+    name: modern-dark
+  override_challenge_layout: false
+  loadingMessages: true
+enhanced_loading: null

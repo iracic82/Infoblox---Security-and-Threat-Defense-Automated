@@ -1,0 +1,37 @@
+#!/bin/bash
+set -euxo pipefail
+
+echo "🧹 Starting Secure Infoblox cleanup..."
+
+cd /root/infoblox-lab/secure-ai-infoblox/scripts || {
+  echo "❌ Failed to cd into script directory. Exiting."
+  exit 1
+}
+
+# Optional/disabled cleanup steps (uncomment to enable)
+# python3 extract_provider_ids.py || echo "⚠️ extract_provider_ids.py failed"
+# sleep 10
+# python3 delete_providers.py || echo "⚠️ delete_providers.py failed"
+# sleep 10
+# python3 extract_my_dns_view_ids.py || echo "⚠️ extract_my_dns_view_ids.py failed"
+# sleep 10
+# python3 delete_dns_views.py || echo "⚠️ delete_dns_views.py failed"
+# sleep 10
+# python3 delete_azure_credential_from_file.py || echo "⚠️ delete_azure_credential_from_file.py failed"
+# sleep 10
+
+echo "🔧 Running delete_sandbox.py"
+python3 delete_sandbox.py || echo "⚠️ delete_sandbox.py failed, continuing..."
+
+sleep 10
+
+echo "🔧 Running delete_user.py"
+if [[ -f user_id.txt ]]; then
+  python3 delete_user.py || echo "⚠️ delete_user.py failed, continuing..."
+else
+  echo "⚠️ Skipping delete_user.py: user_id.txt not found"
+fi
+
+sleep 10
+
+echo "✅ Secure Infoblox cleanup complete."

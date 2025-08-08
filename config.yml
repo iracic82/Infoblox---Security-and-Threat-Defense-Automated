@@ -1,0 +1,105 @@
+version: "3"
+containers:
+- name: shell
+  image: gcr.io/instruqt/cloud-client
+  shell: /bin/bash
+  ports:
+  - 80
+  memory: 2048
+  resources:
+    memory: 2048
+virtualbrowsers:
+- name: aws
+  url: https://signin.aws.amazon.com/console
+- name: azure
+  url: https://azure.microsoft.com/en-us/get-started/azure-portal
+- name: infoblox
+  url: https://portal.infoblox.com/
+- name: gcp
+  url: https://console.cloud.google.com
+- name: lab
+  url: https://infoblox-igor.s3.eu-west-1.amazonaws.com/Infoblox+Security+Lab.jpeg
+- name: aws-discovery
+  url: https://github.com/iracic82/AWS_Discovery
+gcp_projects:
+- name: infoblox-demo
+  services:
+  - compute.googleapis.com
+  - cloudresourcemanager.googleapis.com
+  - iam.googleapis.com
+  - serviceusage.googleapis.com
+aws_accounts:
+- name: infoblox-demo
+  services:
+  - ec2
+  - s3
+  - apigateway
+  - amplifyuibuilder
+  - cloudformation
+  - autoscaling
+  - cloudfront
+  - dynamodb
+  - iam
+  - lambda
+  - rds
+  - ssm
+  - route53
+  - route53resolver
+  - sns
+  - ebs
+  - drs
+  - cloudwatch
+  - events
+  - firehose
+  - internetmonitor
+  - logs
+  - networkmonitor
+  - oam
+  - sqs
+  - sts
+  - rds-data
+  - rum
+  - servicecatalog
+  regions:
+  - eu-west-2
+  - eu-central-1
+  - eu-central-2
+  - eu-north-1
+  - eu-south-1
+  - eu-south-2
+  - eu-west-1
+  - eu-west-3
+  - us-east-1
+  - us-east-2
+  - us-west-1
+  - us-west-2
+  managed_policies:
+  - arn:aws:iam::aws:policy/AdministratorAccess
+azure_subscriptions:
+- name: infoblox-tenant
+  services:
+  - Microsoft.Advisor
+  - Microsoft.Authorization
+  - Microsoft.ContainerRegistry
+  - Microsoft.ContainerInstance
+  - Microsoft.ContainerService
+  - Microsoft.CostManagement
+  - Microsoft.CustomProviders
+  - Microsoft.GuestConfiguration
+  - Microsoft.Features
+  - Microsoft.ManagedIdentity
+  - Microsoft.Management
+  - Microsoft.Network
+  - Microsoft.OperationalInsights
+  - Microsoft.OperationsManagement
+  - Microsoft.PolicyInsights
+  - Microsoft.Portal
+  - Microsoft.ResourceGraph
+  - Microsoft.ResourceHealth
+  - Microsoft.ResourceNotifications
+  - Microsoft.Resources
+  - Microsoft.Compute
+  regions:
+  - northeurope
+  roles:
+  - Owner
