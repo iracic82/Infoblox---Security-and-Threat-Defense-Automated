@@ -7,7 +7,7 @@
 #
 
 echo "This is the setup script"
-sleep 10
+sleep 120
 
 
 # Run Python scripts
