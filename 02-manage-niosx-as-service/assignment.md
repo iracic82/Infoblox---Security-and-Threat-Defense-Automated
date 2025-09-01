@@ -375,7 +375,7 @@ Run the health-check script to validate that your NIOS-XaaS instance is provisio
 
 ```run
 cd  /root/infoblox-lab/secure-ai-infoblox/scripts/
-python3 infoblox_vpn_configure.py
+python3 infoblox_vpn_configure_final.py
 ```
 
 ![Screenshot 2025-08-08 at 21.14.36.png](https://play.instruqt.com/assets/tracks/qy6yppfre8ou/1c80fd67cac6b820947ff185e937887b/assets/Screenshot%202025-08-08%20at%2021.14.36.png)
@@ -437,7 +437,7 @@ python3 extract_tunnels.py
 
 ```run
 cd  /root/infoblox-lab/secure-ai-infoblox/scripts/
-python3 update_uddi_tunnel.py
+python3 update_uddi_tunnel_final.py
 ```
 ![Screenshot 2025-07-22 at 11.09.48.png](https://play.instruqt.com/assets/tracks/prsxwy2uwmxg/e2b972eb690af7fdb6da14cac7ee6f15/assets/Screenshot%202025-07-22%20at%2011.09.48.png)
 
