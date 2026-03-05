@@ -33,6 +33,7 @@ python3 delete_niosxaas.py || echo "⚠️ delete_niosxaas failed, continuing...
 sleep 10
 
 echo "🔧 Running delete_sandbox.py"
+Infoblox_Token=${Infoblox_Token}
 python3 delete_sandbox.py || echo "⚠️ delete_sandbox.py failed, continuing..."
 
 sleep 10
